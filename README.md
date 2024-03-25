@@ -5,7 +5,6 @@
 ```
 npm install vue3-radio-card
 yarn install vue3-radio-card
-
 ```
 
 ### Usage
@@ -44,16 +43,13 @@ const items = [
   { label: "200", value: "200", price: 18 },
 ];
 </script>
-
-<style></style>
 ```
 
 ### Preview
-
- <img src="/dist/demo.gif" alt="Preview of the component" />
+![Preview Gif](https://github.com/gitamgadtaula/vue3-radio-card/blob/main/public/demo.gif?raw=true)
+ <!-- <img src="/dist/demo.gif" alt="Preview of the component" /> -->
 
 
 
 ### Github
-
 https://github.com/gitamgadtaula/vue3-radio-card.git
