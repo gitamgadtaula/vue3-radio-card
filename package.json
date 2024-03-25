@@ -14,6 +14,14 @@
     },
     "./style.css": "./dist/style.css"
   },
+  "keywords": [
+    "vue3-radio",
+    "radio-component",
+    "vue-radio",
+    "tailwind-radio",
+    "radio-card",
+    "awesome-radio"
+  ],
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
