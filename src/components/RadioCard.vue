@@ -74,7 +74,7 @@
 
 <script lang="ts" setup>
 import { defineProps, defineModel } from "vue";
-
+import "../style.css";
 interface Option {
   label: string;
   value: string;

@@ -1,5 +1,6 @@
 /* __placeholder__ */
 import { defineProps, defineModel } from "vue";
+import "../style.css";
 const { defineSlots, defineEmits, defineExpose, defineOptions, withDefaults, } = await import('vue');
 const model = defineModel();
 const __VLS_props = defineProps({ options: (Array), title: String });

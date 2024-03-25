@@ -35,6 +35,7 @@ yarn install vue3-radio-card
 <script lang="ts" setup>
 import { ref } from "vue";
 import { RadioCard } from "vue3-radio-card";
+import "vue3-radio-card/style.css";
 const selected = ref();
 const items = [
   { label: "50", value: "50", price: 5 },
@@ -49,4 +50,10 @@ const items = [
 
 ### Preview
 
- <img src="dist/demo.gif" alt="Preview of the component" />
+ <img src="/dist/demo.gif" alt="Preview of the component" />
+
+
+
+### Github
+
+https://github.com/gitamgadtaula/vue3-radio-card.git
