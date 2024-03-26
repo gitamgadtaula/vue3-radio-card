@@ -96,8 +96,8 @@ function __VLS_template() {
                             {
                                 const __VLS_35 = __VLS_intrinsicElements["label"];
                                 const __VLS_36 = __VLS_elementAsFunctionalComponent(__VLS_35);
-                                const __VLS_37 = __VLS_36({ ...{ 'onClick': {}, }, for: ((option.value)), class: ("relative flex flex-col bg-white dark:bg-slate-800 p-5 rounded-lg shadow-md cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700"), }, ...__VLS_functionalComponentArgsRest(__VLS_36));
-                                ({}({ ...{ 'onClick': {}, }, for: ((option.value)), class: ("relative flex flex-col bg-white dark:bg-slate-800 p-5 rounded-lg shadow-md cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700"), }));
+                                const __VLS_37 = __VLS_36({ ...{ 'onClick': {}, }, for: ((option.value)), class: ("relative flex flex-col bg-white dark:bg-slate-800 hover:bg-slate-100 hover:dark:bg-slate-700 p-5 rounded-lg shadow-md cursor-pointer"), }, ...__VLS_functionalComponentArgsRest(__VLS_36));
+                                ({}({ ...{ 'onClick': {}, }, for: ((option.value)), class: ("relative flex flex-col bg-white dark:bg-slate-800 hover:bg-slate-100 hover:dark:bg-slate-700 p-5 rounded-lg shadow-md cursor-pointer"), }));
                                 let __VLS_40 = { 'click': __VLS_pickEvent(__VLS_39['click'], {}.onClick) };
                                 __VLS_40 = { click: $event => {
                                         __VLS_ctx.handleOptionClick(option.value);
@@ -209,12 +209,12 @@ function __VLS_template() {
         __VLS_styleScopedClasses["flex-col"];
         __VLS_styleScopedClasses["bg-white"];
         __VLS_styleScopedClasses["dark:bg-slate-800"];
+        __VLS_styleScopedClasses["hover:bg-slate-100"];
+        __VLS_styleScopedClasses["hover:dark:bg-slate-700"];
         __VLS_styleScopedClasses["p-5"];
         __VLS_styleScopedClasses["rounded-lg"];
         __VLS_styleScopedClasses["shadow-md"];
         __VLS_styleScopedClasses["cursor-pointer"];
-        __VLS_styleScopedClasses["hover:bg-slate-100"];
-        __VLS_styleScopedClasses["dark:hover:bg-slate-700"];
         __VLS_styleScopedClasses["text-black"];
         __VLS_styleScopedClasses["dark:text-white"];
         __VLS_styleScopedClasses["absolute"];

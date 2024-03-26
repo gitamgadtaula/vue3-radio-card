@@ -17,7 +17,7 @@
               @click="handleOptionClick(option.value)"
               v-for="option in options"
               :for="option.value"
-              class="relative flex flex-col bg-white dark:bg-slate-800 p-5 rounded-lg shadow-md cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700"
+              class="relative flex flex-col bg-white dark:bg-slate-800 hover:bg-slate-100 hover:dark:bg-slate-700 p-5 rounded-lg shadow-md cursor-pointer"
             >
               <slot name="item" v-bind="option">
                 <span class="text-black dark:text-white">

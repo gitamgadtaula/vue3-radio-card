@@ -11,5 +11,6 @@ export default {
   plugins: [],
   safelist: [
     'dark'
-  ]
+  ],
+  darkMode: 'class',
 };
