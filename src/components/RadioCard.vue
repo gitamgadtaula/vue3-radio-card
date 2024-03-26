@@ -79,8 +79,12 @@ interface Option {
   label: string;
   value: string;
 }
+// Generic interface for object with optional Option keys and additional properties
+interface ExtendedOption<T extends object = {}> extends Option {
+  [K in keyof T]: T[K];
+}
 const model = defineModel();
-defineProps({ options: Array<Option>, title: String });
+defineProps({ options: Array<ExtendedOption>, title: String });
 function handleOptionClick(option: string | number) {
   model.value = option;
 }

@@ -13,7 +13,7 @@ yarn install vue3-radio-card
 <template>
   <div>
     <RadioCard v-model="selected" :options="items" title="Choose your plan">
-    <!-- Default slot start -->
+      <!-- Default slot start -->
       <template #item="{ value, price }">
         <span class="font-bold text-gray-900">
           <span class="text-4xl">{{ value }}</span>
@@ -48,13 +48,33 @@ yarn install vue3-radio-card
 ```
 
 ### Props
+
 ```js
 title: String
-options: Array<object>
- // Eg: [{label, value,{...options} }]
-// Note: the keys 'label' and 'value' are mandatory, rest are optional
+
+options: Array<ExtendedOption>
+
 ```
 
+```js
+interface Option {
+    label: string;
+    value: string;
+  }
+// Generic interface for object with optional Option keys and additional properties
+interface ExtendedOption<T extends object = {}> extends Option {
+    [K in keyof T]: T[K];
+  }
+// Example:
+options = [
+  {
+    label: "50", // required
+    value: "50", // required
+    price: 5, // optional, useful for sending data in the slot template
+    user: { name: "John" }, // optional
+  },
+];
+```
 
 ### Slots
 
