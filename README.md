@@ -50,10 +50,8 @@ yarn install vue3-radio-card
 ### Props
 
 ```js
-title: String
-
-options: Array<ExtendedOption>
-
+title: String // optional 
+options: Array<ExtendedOption> // required
 ```
 
 ```js

@@ -1,6 +1,6 @@
 {
   "name": "vue3-radio-card",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "A tailwind based radio card component for Vue3",
   "type": "module",
   "files": [
@@ -16,6 +16,7 @@
     "./style.css": "./dist/style.css"
   },
   "license": "MIT",
+  "homepage": "https://codesandbox.io/p/github/gitamgadtaula/vue-radio-card-demo/main",
   "repository": {
     "type": "git",
     "url": "https://github.com/gitamgadtaula/vue3-radio-card.git"
