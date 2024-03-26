@@ -4,7 +4,7 @@
 
 ```shell
 npm install vue3-radio-card
-yarn install vue3-radio-card
+yarn add vue3-radio-card
 ```
 
 ### Usage
