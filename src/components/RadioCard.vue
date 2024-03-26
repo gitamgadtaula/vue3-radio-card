@@ -1,6 +1,6 @@
 <template>
   <div>
-    <body class="p-4 flex items-center justify-center bg-gray-100 min-h-screen">
+    <body class="p-4 flex min-h-screen">
       <form class="w-full max-w-screen-md mx-auto">
         <fieldset class="space-y-6">
           <div
@@ -17,14 +17,13 @@
               @click="handleOptionClick(option.value)"
               v-for="option in options"
               :for="option.value"
-              class="relative flex flex-col bg-white p-5 rounded-lg shadow-md cursor-pointer"
+              class="relative flex flex-col bg-white dark:bg-slate-800 p-5 rounded-lg shadow-md cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700"
             >
-              <span
-                class="font-semibold text-gray-500 leading-tight uppercase mb-3"
-                >{{ option.label }}</span
-              >
-
-              <slot name="item" v-bind="option"></slot>
+              <slot name="item" v-bind="option">
+                <span class="text-black dark:text-white">
+                  {{ option.label }}
+                </span>
+              </slot>
 
               <input
                 type="radio"
@@ -39,7 +38,7 @@
                 class="hidden absolute inset-0 border-2 border-green-500 bg-green-200 bg-opacity-10 rounded-lg"
               >
                 <span
-                  class="absolute top-4 right-4 h-6 w-6 inline-flex items-center justify-center rounded-full bg-green-200"
+                  class="absolute top-2 right-2 h-4 w-4 md:h-6 md:w-6 inline-flex items-center justify-center rounded-full bg-green-200"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -64,8 +63,6 @@
 </template>
 
 <script lang="ts" setup>
-import { defineProps, defineModel } from "vue";
-import "../style.css";
 interface Option {
   label: string;
   value: string;
@@ -76,6 +73,7 @@ interface ExtendedOption<T extends object = {}> extends Option {
 }
 const model = defineModel();
 defineProps({ options: Array<ExtendedOption>, title: String });
+
 function handleOptionClick(option: string | number) {
   model.value = option;
 }
