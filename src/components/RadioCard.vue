@@ -25,16 +25,7 @@
               >
 
               <slot name="item" v-bind="option"></slot>
-              <!-- <span class="font-bold text-gray-900">
-                <span class="text-4xl">1</span>
-                <span class="text-2xl uppercase">GB</span>
-              </span>
-              <span>
-                <span class="text-xl font-bold text-gray-500">$</span>
-                <span class="text-xl font-bold text-gray-900 -ml-1">5</span>
-                <span class="text-xl font-semibold text-gray-500">/</span>
-                <span class="text-lg font-semibold text-gray-500">mo</span>
-              </span> -->
+
               <input
                 type="radio"
                 :name="option.value"
