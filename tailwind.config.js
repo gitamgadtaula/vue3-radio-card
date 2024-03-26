@@ -9,4 +9,7 @@ export default {
     extend: {},
   },
   plugins: [],
+  safelist: [
+    'dark'
+  ]
 };
