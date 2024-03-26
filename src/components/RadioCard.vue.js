@@ -1,7 +1,5 @@
 /* __placeholder__ */
-import { defineProps, defineModel } from "vue";
-import "../style.css";
-const { defineSlots, defineEmits, defineExpose, defineOptions, withDefaults, } = await import('vue');
+const { defineProps, defineSlots, defineEmits, defineExpose, defineModel, defineOptions, withDefaults, } = await import('vue');
 const model = defineModel();
 const __VLS_props = defineProps({ options: (Array), title: String });
 function handleOptionClick(option) {
@@ -56,8 +54,8 @@ function __VLS_template() {
         {
             const __VLS_5 = __VLS_intrinsicElements["body"];
             const __VLS_6 = __VLS_elementAsFunctionalComponent(__VLS_5);
-            const __VLS_7 = __VLS_6({ ...{}, class: ("p-4 flex items-center justify-center bg-gray-100 min-h-screen"), }, ...__VLS_functionalComponentArgsRest(__VLS_6));
-            ({}({ ...{}, class: ("p-4 flex items-center justify-center bg-gray-100 min-h-screen"), }));
+            const __VLS_7 = __VLS_6({ ...{}, class: ("p-4 flex min-h-screen"), }, ...__VLS_functionalComponentArgsRest(__VLS_6));
+            ({}({ ...{}, class: ("p-4 flex min-h-screen"), }));
             {
                 const __VLS_10 = __VLS_intrinsicElements["form"];
                 const __VLS_11 = __VLS_elementAsFunctionalComponent(__VLS_10);
@@ -98,8 +96,8 @@ function __VLS_template() {
                             {
                                 const __VLS_35 = __VLS_intrinsicElements["label"];
                                 const __VLS_36 = __VLS_elementAsFunctionalComponent(__VLS_35);
-                                const __VLS_37 = __VLS_36({ ...{ 'onClick': {}, }, for: ((option.value)), class: ("relative flex flex-col bg-white p-5 rounded-lg shadow-md cursor-pointer"), }, ...__VLS_functionalComponentArgsRest(__VLS_36));
-                                ({}({ ...{ 'onClick': {}, }, for: ((option.value)), class: ("relative flex flex-col bg-white p-5 rounded-lg shadow-md cursor-pointer"), }));
+                                const __VLS_37 = __VLS_36({ ...{ 'onClick': {}, }, for: ((option.value)), class: ("relative flex flex-col bg-white dark:bg-slate-800 p-5 rounded-lg shadow-md cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700"), }, ...__VLS_functionalComponentArgsRest(__VLS_36));
+                                ({}({ ...{ 'onClick': {}, }, for: ((option.value)), class: ("relative flex flex-col bg-white dark:bg-slate-800 p-5 rounded-lg shadow-md cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700"), }));
                                 let __VLS_40 = { 'click': __VLS_pickEvent(__VLS_39['click'], {}.onClick) };
                                 __VLS_40 = { click: $event => {
                                         __VLS_ctx.handleOptionClick(option.value);
@@ -108,22 +106,23 @@ function __VLS_template() {
                                     }
                                 };
                                 {
-                                    const __VLS_41 = __VLS_intrinsicElements["span"];
-                                    const __VLS_42 = __VLS_elementAsFunctionalComponent(__VLS_41);
-                                    const __VLS_43 = __VLS_42({ ...{}, class: ("font-semibold text-gray-500 leading-tight uppercase mb-3"), }, ...__VLS_functionalComponentArgsRest(__VLS_42));
-                                    ({}({ ...{}, class: ("font-semibold text-gray-500 leading-tight uppercase mb-3"), }));
-                                    (option.label);
-                                    (__VLS_44.slots).default;
-                                    const __VLS_44 = __VLS_pickFunctionalComponentCtx(__VLS_41, __VLS_43);
-                                }
-                                {
-                                    const __VLS_46 = {}.slot;
-                                    const __VLS_47 = __VLS_asFunctionalComponent(__VLS_46, new __VLS_46({ ...{}, ...(option), }));
-                                    const __VLS_48 = __VLS_47({ ...{}, ...(option), }, ...__VLS_functionalComponentArgsRest(__VLS_47));
+                                    const __VLS_41 = {}.slot;
+                                    const __VLS_42 = __VLS_asFunctionalComponent(__VLS_41, new __VLS_41({ ...{}, ...(option), }));
+                                    const __VLS_43 = __VLS_42({ ...{}, ...(option), }, ...__VLS_functionalComponentArgsRest(__VLS_42));
                                     ({}({ ...{}, ...(option), }));
-                                    var __VLS_50 = {
+                                    var __VLS_45 = {
                                         ...(option),
                                     };
+                                    {
+                                        const __VLS_46 = __VLS_intrinsicElements["span"];
+                                        const __VLS_47 = __VLS_elementAsFunctionalComponent(__VLS_46);
+                                        const __VLS_48 = __VLS_47({ ...{}, class: ("text-black dark:text-white"), }, ...__VLS_functionalComponentArgsRest(__VLS_47));
+                                        ({}({ ...{}, class: ("text-black dark:text-white"), }));
+                                        (option.label);
+                                        (__VLS_49.slots).default;
+                                        const __VLS_49 = __VLS_pickFunctionalComponentCtx(__VLS_46, __VLS_48);
+                                    }
+                                    (__VLS_38.slots).default;
                                 }
                                 {
                                     const __VLS_51 = __VLS_intrinsicElements["input"];
@@ -140,8 +139,8 @@ function __VLS_template() {
                                     {
                                         const __VLS_61 = __VLS_intrinsicElements["span"];
                                         const __VLS_62 = __VLS_elementAsFunctionalComponent(__VLS_61);
-                                        const __VLS_63 = __VLS_62({ ...{}, class: ("absolute top-4 right-4 h-6 w-6 inline-flex items-center justify-center rounded-full bg-green-200"), }, ...__VLS_functionalComponentArgsRest(__VLS_62));
-                                        ({}({ ...{}, class: ("absolute top-4 right-4 h-6 w-6 inline-flex items-center justify-center rounded-full bg-green-200"), }));
+                                        const __VLS_63 = __VLS_62({ ...{}, class: ("absolute top-2 right-2 h-4 w-4 md:h-6 md:w-6 inline-flex items-center justify-center rounded-full bg-green-200"), }, ...__VLS_functionalComponentArgsRest(__VLS_62));
+                                        ({}({ ...{}, class: ("absolute top-2 right-2 h-4 w-4 md:h-6 md:w-6 inline-flex items-center justify-center rounded-full bg-green-200"), }));
                                         {
                                             const __VLS_66 = __VLS_intrinsicElements["svg"];
                                             const __VLS_67 = __VLS_elementAsFunctionalComponent(__VLS_66);
@@ -188,9 +187,6 @@ function __VLS_template() {
     if (typeof __VLS_styleScopedClasses === 'object' && !Array.isArray(__VLS_styleScopedClasses)) {
         __VLS_styleScopedClasses["p-4"];
         __VLS_styleScopedClasses["flex"];
-        __VLS_styleScopedClasses["items-center"];
-        __VLS_styleScopedClasses["justify-center"];
-        __VLS_styleScopedClasses["bg-gray-100"];
         __VLS_styleScopedClasses["min-h-screen"];
         __VLS_styleScopedClasses["w-full"];
         __VLS_styleScopedClasses["max-w-screen-md"];
@@ -212,15 +208,15 @@ function __VLS_template() {
         __VLS_styleScopedClasses["flex"];
         __VLS_styleScopedClasses["flex-col"];
         __VLS_styleScopedClasses["bg-white"];
+        __VLS_styleScopedClasses["dark:bg-slate-800"];
         __VLS_styleScopedClasses["p-5"];
         __VLS_styleScopedClasses["rounded-lg"];
         __VLS_styleScopedClasses["shadow-md"];
         __VLS_styleScopedClasses["cursor-pointer"];
-        __VLS_styleScopedClasses["font-semibold"];
-        __VLS_styleScopedClasses["text-gray-500"];
-        __VLS_styleScopedClasses["leading-tight"];
-        __VLS_styleScopedClasses["uppercase"];
-        __VLS_styleScopedClasses["mb-3"];
+        __VLS_styleScopedClasses["hover:bg-slate-100"];
+        __VLS_styleScopedClasses["dark:hover:bg-slate-700"];
+        __VLS_styleScopedClasses["text-black"];
+        __VLS_styleScopedClasses["dark:text-white"];
         __VLS_styleScopedClasses["absolute"];
         __VLS_styleScopedClasses["h-0"];
         __VLS_styleScopedClasses["w-0"];
@@ -234,10 +230,12 @@ function __VLS_template() {
         __VLS_styleScopedClasses["bg-opacity-10"];
         __VLS_styleScopedClasses["rounded-lg"];
         __VLS_styleScopedClasses["absolute"];
-        __VLS_styleScopedClasses["top-4"];
-        __VLS_styleScopedClasses["right-4"];
-        __VLS_styleScopedClasses["h-6"];
-        __VLS_styleScopedClasses["w-6"];
+        __VLS_styleScopedClasses["top-2"];
+        __VLS_styleScopedClasses["right-2"];
+        __VLS_styleScopedClasses["h-4"];
+        __VLS_styleScopedClasses["w-4"];
+        __VLS_styleScopedClasses["md:h-6"];
+        __VLS_styleScopedClasses["md:w-6"];
         __VLS_styleScopedClasses["inline-flex"];
         __VLS_styleScopedClasses["items-center"];
         __VLS_styleScopedClasses["justify-center"];

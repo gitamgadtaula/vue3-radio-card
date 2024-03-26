@@ -68,7 +68,7 @@ interface Option {
   value: string;
 }
 // Generic interface for object with optional Option keys and additional properties
-interface ExtendedOption<T extends object = {}> extends Option {
+interface ExtendedOption extends Option {
   [key: string]: any;
 }
 const model = defineModel();
