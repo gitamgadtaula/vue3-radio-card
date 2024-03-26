@@ -82,6 +82,10 @@ options = [
 
 ![Preview Gif](https://github.com/gitamgadtaula/vue3-radio-card/blob/main/public/demo.gif?raw=true)
 
+### Codesandbox
+
+https://codesandbox.io/p/github/gitamgadtaula/vue-radio-card-demo/main
+
  <!-- <img src="/dist/demo.gif" alt="Preview of the component" /> -->
 
 ### Github
