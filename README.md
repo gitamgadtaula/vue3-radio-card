@@ -13,7 +13,7 @@ yarn add vue3-radio-card
 <template>
   <div>
     <RadioCard v-model="selected" :options="items" title="Choose your plan">
-      <!-- Default slot start -->
+      <!-- Item slot start -->
       <template #item="{ value, price }">
         <span class="font-bold text-gray-900">
           <span class="text-4xl">{{ value }}</span>
@@ -28,7 +28,7 @@ yarn add vue3-radio-card
           <span class="text-lg font-semibold text-gray-500">mo</span>
         </span>
       </template>
-      <!-- Default slot end -->
+      <!-- Item slot end -->
     </RadioCard>
   </div>
 </template>
@@ -60,7 +60,7 @@ interface Option {
     value: string;
   }
 // Generic interface for object with optional Option keys and additional properties
-interface ExtendedOption<T extends object = {}> extends Option {
+interface ExtendedOption extends Option {
   [key: string]: any;
 }
 // Example:
