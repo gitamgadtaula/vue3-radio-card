@@ -76,7 +76,7 @@ options = [
 
 ### Slots
 
-- default slot
+- #item
 
 ### Preview
 

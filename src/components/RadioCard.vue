@@ -1,6 +1,5 @@
 <template>
   <div>
-    <body class="p-4 flex min-h-screen">
       <form class="w-full max-w-screen-md mx-auto">
         <fieldset class="space-y-6">
           <div
@@ -58,7 +57,6 @@
           </div>
         </fieldset>
       </form>
-    </body>
   </div>
 </template>
 
