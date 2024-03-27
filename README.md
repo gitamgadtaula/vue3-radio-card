@@ -1,5 +1,7 @@
 # A tailwind based card type radio button for Vue3
 
+🥳 Supports dark mode 🌑
+
 ### Installation
 
 ```shell
