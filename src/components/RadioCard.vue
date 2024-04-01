@@ -1,6 +1,6 @@
 <template>
   <div>
-      <form class="w-full max-w-screen-md mx-auto">
+      <form class="w-full max-w-screen-md">
         <fieldset class="space-y-6">
           <div
             class="flex items-center justify-between py-4 border-b border-gray-300"
