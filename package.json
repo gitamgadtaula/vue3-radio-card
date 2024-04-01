@@ -1,6 +1,6 @@
 {
   "name": "vue3-radio-card",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "A tailwind based radio card component for Vue3",
   "type": "module",
   "files": [
