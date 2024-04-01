@@ -52,8 +52,8 @@ function __VLS_template() {
         {
             const __VLS_5 = __VLS_intrinsicElements["form"];
             const __VLS_6 = __VLS_elementAsFunctionalComponent(__VLS_5);
-            const __VLS_7 = __VLS_6({ ...{}, class: ("w-full max-w-screen-md mx-auto"), }, ...__VLS_functionalComponentArgsRest(__VLS_6));
-            ({}({ ...{}, class: ("w-full max-w-screen-md mx-auto"), }));
+            const __VLS_7 = __VLS_6({ ...{}, class: ("w-full max-w-screen-md"), }, ...__VLS_functionalComponentArgsRest(__VLS_6));
+            ({}({ ...{}, class: ("w-full max-w-screen-md"), }));
             {
                 const __VLS_10 = __VLS_intrinsicElements["fieldset"];
                 const __VLS_11 = __VLS_elementAsFunctionalComponent(__VLS_10);
@@ -177,7 +177,6 @@ function __VLS_template() {
     if (typeof __VLS_styleScopedClasses === 'object' && !Array.isArray(__VLS_styleScopedClasses)) {
         __VLS_styleScopedClasses["w-full"];
         __VLS_styleScopedClasses["max-w-screen-md"];
-        __VLS_styleScopedClasses["mx-auto"];
         __VLS_styleScopedClasses["space-y-6"];
         __VLS_styleScopedClasses["flex"];
         __VLS_styleScopedClasses["items-center"];

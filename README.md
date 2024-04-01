@@ -82,7 +82,7 @@ options = [
 
 ### Preview
 
-![Preview Gif](https://github.com/gitamgadtaula/vue3-radio-card/blob/main/public/demo.gif?raw=true)
+![Preview Gif](https://github.com/gitamgadtaula/vue3-radio-card/blob/main/src/assets/demo.gif?raw=true)
 
 ### Codesandbox
 
